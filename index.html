@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body ng-controller="mainCtrl">
+    <!-- <input ng-model="nameFilter.name"> -->
+  <!-- Climate: {{planet1.climate}} -->
+
+<header>
+  <h1>Planet Finder</h1>
+</header>
+
+  <input ng-model="searchAnything" placeholder="Search Anything!" id="SearchAnything">
+  <input ng-model="nameFilter.name" placeholder="Find a specific Planet" id="nameFilter">
+
+
+
+
+  <div ng-repeat="planet in homePlanets1 | filter: nameFilter | filter: searchAnything">
+    <h2>{{planet.name}}</h2>
+
+  <span class="info">
+  Name: {{planet.name}}<br>
+  Population: {{planet.population}} <br>
+  Rotational-Period: {{planet.rotation_period}}<br>
+  Orbital Period: {{planet.orbital_period}}<br>
+  Diameter: {{planet.diameter}}<br>
+  Climate: {{planet.climate}}<br>
+  Gravity: {{planet.gravity}}<br>
+  Terrain: {{planet.terrain}}<br>
+  Surface Water: {{planet.surface_water}}<br><br>
+
+  <hr></span>
+
+  </div>
+
+  <div ng-repeat="planet in homePlanets2 | filter: nameFilter | filter: searchAnything">
+    <h2>{{planet.name}}</h2>
+
+  <span class="info">
+  Name: {{planet.name}}<br>
+  Population: {{planet.population}} <br>
+  Rotational-Period: {{planet.rotation_period}}<br>
+  Orbital Period: {{planet.orbital_period}}<br>
+  Diameter: {{planet.diameter}}<br>
+  Climate: {{planet.climate}}<br>
+  Gravity: {{planet.gravity}}<br>
+  Terrain: {{planet.terrain}}<br>
+  Surface Water: {{planet.surface_water}}<br><br>
+
+  <hr></span>
+
+  </div>
+
+<!-- 3 -->
+<div ng-repeat="planet in homePlanets3 | filter: nameFilter | filter: searchAnything">
+  <h2>{{planet.name}}</h2>
+
+<span class="info">
+Name: {{planet.name}}<br>
+Population: {{planet.population}} <br>
+Rotational-Period: {{planet.rotation_period}}<br>
+Orbital Period: {{planet.orbital_period}}<br>
+Diameter: {{planet.diameter}}<br>
+Climate: {{planet.climate}}<br>
+Gravity: {{planet.gravity}}<br>
+Terrain: {{planet.terrain}}<br>
+Surface Water: {{planet.surface_water}}<br><br>
+
+<hr></span>
+
+</div>
+
+<!-- 4 -->
+<div ng-repeat="planet in homePlanets4 | filter: nameFilter | filter: searchAnything">
+  <h2>{{planet.name}}</h2>
+
+<span class="info">
+Name: {{planet.name}}<br>
+Population: {{planet.population}} <br>
+Rotational-Period: {{planet.rotation_period}}<br>
+Orbital Period: {{planet.orbital_period}}<br>
+Diameter: {{planet.diameter}}<br>
+Climate: {{planet.climate}}<br>
+Gravity: {{planet.gravity}}<br>
+Terrain: {{planet.terrain}}<br>
+Surface Water: {{planet.surface_water}}<br><br>
+
+<hr></span>
+
+</div>
+
+<!-- 5 -->
+<div ng-repeat="planet in homePlanets5 | filter: nameFilter | filter: searchAnything">
+  <h2>{{planet.name}}</h2>
+
+<span class="info">
+Name: {{planet.name}}<br>
+Population: {{planet.population}} <br>
+Rotational-Period: {{planet.rotation_period}}<br>
+Orbital Period: {{planet.orbital_period}}<br>
+Diameter: {{planet.diameter}}<br>
+Climate: {{planet.climate}}<br>
+Gravity: {{planet.gravity}}<br>
+Terrain: {{planet.terrain}}<br>
+Surface Water: {{planet.surface_water}}<br><br>
+
+<hr></span>
+
+</div>
+
+
+<!-- 6 -->
+<div ng-repeat="planet in homePlanets6 | filter: nameFilter | filter: searchAnything">
+  <h2>{{planet.name}}</h2>
+
+<span class="info">
+Name: {{planet.name}}<br>
+Population: {{planet.population}} <br>
+Rotational-Period: {{planet.rotation_period}}<br>
+Orbital Period: {{planet.orbital_period}}<br>
+Diameter: {{planet.diameter}}<br>
+Climate: {{planet.climate}}<br>
+Gravity: {{planet.gravity}}<br>
+Terrain: {{planet.terrain}}<br>
+Surface Water: {{planet.surface_water}}<br><br>
+
+<hr></span>
+
+</div>
+
+
+<!-- 7 Jakku -->
+<div ng-repeat="planet in homePlanets7 | filter: nameFilter | filter: searchAnything">
+  <h2>{{planet.name}}</h2>
+
+<span class="info">
+Name: {{planet.name}}<br>
+Population: {{planet.population}} <br>
+Rotational-Period: {{planet.rotation_period}}<br>
+Orbital Period: {{planet.orbital_period}}<br>
+Diameter: {{planet.diameter}}<br>
+Climate: {{planet.climate}}<br>
+Gravity: {{planet.gravity}}<br>
+Terrain: {{planet.terrain}}<br>
+Surface Water: {{planet.surface_water}}<br><br>
+
+<hr></span>
+
+</div>
+
+<section>
+Like what you see? <a href="somewhere.com">Click Here</a> to find a planet to stay at today!
+</section>
+
+
+
+
+
+
+
+
+  <!-- Planet Destination Tracker!
+
+  <section class="layout">
+    <h2>{{planet1.name}}</h2>
+    <table>
+      <tr>
+        <th>Climate</th>
+        <th>Population</th>
+        <th>Terrain</th>
+        <th>Gravity</th>
+      </tr>
+      <tr>
+        <td>{{planet1.climate}}</td>
+        <td>{{planet1.population}}</td>
+        <td>{{planet1.terrain}}</td>
+        <td>{{planet1.gravity}}</td>
+      </tr>
+    </table>
+
+
+</section>
+
+<br>
+<br>
+
+<section class="layout">
+  <h2>{{planet2.name}}</h2>
+  <table>
+    <tr>
+      <th>Climate</th>
+      <th>Population</th>
+      <th>Terrain</th>
+      <th>Gravity</th>
+    </tr>
+    <tr>
+      <td>{{planet2.climate}}</td>
+      <td>{{planet2.population}}</td>
+      <td>{{planet2.terrain}}</td>
+      <td>{{planet2.gravity}}</td>
+    </tr>
+  </table>
+
+
+</section> -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/mainCtrl.js"></script>
+  <script src="js/starWarsService.js"></script>
+  </body>
+</html>
